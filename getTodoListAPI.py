@@ -10,5 +10,5 @@ if resp.status_code != 200:
    raise ApiError('Get /tasks/ {}'.format(resp.status_code))
 
 # no problems?
-for todo_item in resp.json():
+for tdo_item in resp.json():
    print('{} {}'.format(todo_item['id'], todo_item['summary']))
